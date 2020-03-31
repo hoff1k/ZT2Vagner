@@ -48,9 +48,6 @@ padding: 15px;
 margin: 0px;
 }
 
-header nav {
-    display: compact;
-}
 
 header img {
     height: 100px;
@@ -106,7 +103,21 @@ nav ul li:hover {
 background-color: black;
 }
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+td, th {
+  border: 0px solid black;
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: green;
+}
 
 
 
