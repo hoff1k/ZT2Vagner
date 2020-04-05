@@ -30,7 +30,7 @@ font-size: 1.5em;
 }
 
 .logo {
-    display: inline-flex;
+    display: inline-flex;  /* Styl na CLASS */
     float: left;
 }
 
@@ -119,7 +119,17 @@ tr:nth-child(even) {
   background-color: green;
 }
 
+#krestnijmeno {
+    background-color: green; /* ID CLASS */
+}
 
+.content div div td th h3 {
+    color: black;
+}
+
+.content body div p {
+    color: yellow;
+}
 
 
 
