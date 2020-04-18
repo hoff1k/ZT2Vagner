@@ -1,11 +1,15 @@
 <?php
 //Spojeni retezcu
 echo "au"."ti"."cko";
+echo "<br>";
 echo "blb" . "ost";
+echo "<br>";
 echo 5 . 7;
 echo 2.3;
 
 //Prirovnavaci operatory
+$a = 2;
+$b = 3;
 
 print "<br> ";
 echo $a += $b;
