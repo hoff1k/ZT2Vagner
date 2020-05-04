@@ -1,4 +1,9 @@
 <?php
+require 'tracy/tracy.phar';
+use Tracy\Debugger;
+Debugger::enable();
+Debugger::$strictMode = true;
+
 //Úkol č.2
 //Proměnná
 $promenna1 = 4;
@@ -51,7 +56,7 @@ $auta = array(1 => "porsche",
     4 => "skoda",
     5 => "lamborghini",
     6 => "subaru");
-var_dump($auta);
+dump($auta);
 
 //Vnorene pole 
 print "PC: ";
@@ -90,7 +95,7 @@ $pc = array(
                 'cena' => '20 000,- czk'),
         )
     );
-var_dump($pc[1]);
+dump($pc[1]);
 
 
 
@@ -112,60 +117,60 @@ $b = 3;
 
 print "<br> ";
 echo $a += $b;
-var_dump($a+=$b);
+dump($a+=$b);
 
 print "<br> ";
 echo $a--;
-var_dump($a--);
+dump($a--);
 
 print "<br> ";
 echo $a++;
-var_dump($a++);
+dump($a++);
 
 print "<br>";
 echo $a -= $b;
-var_dump($a-=$b);
+dump($a-=$b);
 
 print "<br>";
 echo $a *= $b;
-var_dump($a*=$b);
+dump($a*=$b);
 
 print "<br>";
 echo $a /= $b;
-var_dump($a/=$b);
+dump($a/=$b);
 
 print "<br>Je $a vetsi cislo jak $b?<br>";
-var_dump($a>$b);
+dump($a>$b);
 
 print "<br>Je $a jinaci hodnota nez $b?<br>";
-var_dump($a!=$b);
+dump($a!=$b);
 
 print "<br> Rovna se?";
 echo $a==$b;
-var_dump($a==$b);
+dump($a==$b);
 
 
 print "<br>Je $b vetsi císlo nez $a?<br>";
-var_dump($a<$b);
+dump($a<$b);
 
 //Aritmeticke operatory
 
 print "<br>Nasobek = ";
 echo $a*$b;
-var_dump($a*$b);
+dump($a*$b);
 
 print "<br>Deleni = ";
 echo $a/$b;
-var_dump($a/$b);
+dump($a/$b);
 ?>
 
 print "<br>Scitani = ";
 echo $a+$b;
-var_dump($a+$b);
+dump($a+$b);
 
 print "<br>Odcitani = ";
 echo $a-$b;
-var_dump($a-$b);
+dump($a-$b);
     
 ?>
 
