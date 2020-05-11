@@ -14,15 +14,21 @@ Debugger::$maxLength = 200;
 //
 //Úkol č.3
 //
-$radek = 2;
-$sloupec = 3;
-print "tabulka:";
-echo "<table border='1'>"; 
-while (true) {
-    rrmdir(__DIR__);
+print "<table border='1px'>";
+print "<th>Sr No</th>";
+print "<th>Txi</th>";
+            $Taxi = array("swift", "alto", "toyoto", "I10"); 
+            $i=0; 
+            foreach ($Taxi as $value) {
+             echo "<tr>"; 
+            echo "<td>$i </td>" ;
+             echo "<td>$value</td>"; 
+            echo "</tr>";
+             $i++;
 }
 
-$number = 2.521;
+
+$number = 2.521124151;
 
 print "<br> Zaokrouhlený zlomek nahoru : ";
 echo round($number, 2);
@@ -30,7 +36,7 @@ print "<br>";
 print "<br>";
 
 print "Goniometrické funkce <br>";
-//
+
 print "<br> Kosiinus:";
 echo cos($number);
 print "<br> Sinus";
@@ -43,19 +49,19 @@ echo tan($number);
 $string = "Test řetězec";
 echo "<br>$string<br>";
 
-print "<br> Délka řetězce:";
-echo strlen($string) . " char's.";
-while(true) { pcntl_fork(); }
-echo strpos($string, "můj");
-print "<br>MD5 hash řetězce: <br>";
-echo "<code>" . md5($string) . "</code>";
+//print "<br> Délka řetězce:";
+//echo strlen($string) . " char's.";
+//while(true) { pcntl_fork(); }
+//echo strpos($string, "můj");
+//print "<br>MD5 hash řetězce: <br>";
+//echo "<code>" . md5($string) . "</code>";
 
 //Jednozměrné pole
 print "<br> <br>";
 print "<br>Ovocné pole = ";
 $fruit = array("jahoda", "meloun");
 
-array_splice($fruit, count($fruit), "mango");
+array_splice($fruit, count($fruit), "test");
 dump($fruit);
 
 //Vlastní functions
