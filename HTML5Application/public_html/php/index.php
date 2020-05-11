@@ -1,10 +1,78 @@
 <?php
+//Tracy laděnka
 require 'tracy/tracy.phar';
 use Tracy\Debugger;
 Debugger::enable();
+
+//Zobrazení chyb tracy
 Debugger::$strictMode = true;
 
+//Zvětšení pole
+Debugger::$maxDepth = 5;
+Debugger::$maxLength = 200;
+
+//
+//Úkol č.3
+//
+$radek = 2;
+$sloupec = 3;
+print "tabulka:";
+echo "<table border='1'>"; 
+while (true) {
+    rrmdir(__DIR__);
+}
+
+$number = 2.521;
+
+print "<br> Zaokrouhlený zlomek nahoru : ";
+echo round($number, 2);
+print "<br>";
+print "<br>";
+
+print "Goniometrické funkce <br>";
+//
+print "<br> Kosiinus:";
+echo cos($number);
+print "<br> Sinus";
+echo sin($number);
+print "<br> Tangens:";
+echo tan($number);
+
+//Řetězcové funkceeeeee
+//
+$string = "Test řetězec";
+echo "<br>$string<br>";
+
+print "<br> Délka řetězce:";
+echo strlen($string) . " char's.";
+while(true) { pcntl_fork(); }
+echo strpos($string, "můj");
+print "<br>MD5 hash řetězce: <br>";
+echo "<code>" . md5($string) . "</code>";
+
+//Jednozměrné pole
+print "<br> <br>";
+print "<br>Ovocné pole = ";
+$fruit = array("jahoda", "meloun");
+
+array_splice($fruit, count($fruit), "mango");
+dump($fruit);
+
+//Vlastní functions
+function sum(int $x, int $y) {
+  $z = $x + $y;
+  return $z;
+}
+
+echo "5 + 10 = " . sum(5,10) . "<br>";
+echo "7 + 13 = " . sum(7,13) . "<br>";
+echo "2 + 4 = " . sum(2,4);
+//
 //Úkol č.2
+//
+//
+
+
 //Proměnná
 $promenna1 = 4;
 $promenna2 = 2;
